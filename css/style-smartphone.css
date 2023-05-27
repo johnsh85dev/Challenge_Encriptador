@@ -92,13 +92,18 @@
 
   .output-result {
     width: 90%;
-    height: 20vh;
+    height: 25vh;
   }
 
   .output-text {
     padding: 0.5rem;
-    font-size: 7vw;
+    font-size: 6vw;
     color: #000000;
+  }
+
+  .btn-copiar {
+    width: 80%;
+    height: 6vh;
   }
 
   .copyright {
