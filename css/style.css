@@ -3,8 +3,6 @@
   Desarrollado por Jonathan Sánchez Hernández - 2023
 */
 html {
-  min-width: 320px;
-  max-width: 1920px;
   box-sizing: border-box;
 }
 
