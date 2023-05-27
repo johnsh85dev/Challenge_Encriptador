@@ -68,12 +68,11 @@
 
   .container-output {
     width: 100%;
-    height: 30%;
+    height: 20vh;
   }
 
   .output-initial {
     width: 90%;
-    height: 20vh;
   }
 
   .muñeco {
