@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (min-height: 380px) and (max-height: 640px) {
+@media screen /* and (min-height: 300px) */and (max-height: 640px) {
   .main-container {
     flex-direction: row;
   }
