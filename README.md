@@ -40,9 +40,17 @@
 
 >Desktop
 >
-![Desktop](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/5658fc14-f1c0-4a80-86e7-78fdd2c9135a)
+>![Desktop](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/5658fc14-f1c0-4a80-86e7-78fdd2c9135a)
 
 <br>
 
+>Tablet
+>
+>![Tablet](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/4970364f-914e-4a2f-a1eb-a40dcf9c5fda)
 
+<br>
+
+>Smartphone
+>
+>![Smartphone](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/613325f8-d976-42c0-ba16-dfae1a08d9b4)
 
