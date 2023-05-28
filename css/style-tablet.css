@@ -2,7 +2,7 @@
   Challenge Encriptador del Programa ONE -G5 - Alura Latam
   Desarrollado por Jonathan Sánchez Hernández - 2023
 */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
   .container {
     width: 100vw;
   }
