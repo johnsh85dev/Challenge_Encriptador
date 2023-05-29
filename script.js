@@ -119,7 +119,7 @@ document.getElementById("copy").onclick = function () {
   let text = document.getElementById("content").value;
   navigator.clipboard.writeText(text);
   // Muestra una alerta de que el mensaje fue copiado con éxito
-  swal("Texto copiado con éxito", "Excelente!", "success");
+  swal("Excelente!", "Texto copiado con éxito", "success");
   // Muestra nuevamente la pantalla con el mensaje inicial
   document.getElementById("output-initial").classList.remove("disable");
   // Oculta la pantalla con el mensaje que fue encriptado/desencriptado
