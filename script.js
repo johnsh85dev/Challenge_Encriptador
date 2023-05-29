@@ -24,6 +24,8 @@ function btnEncrypt() {
     document.getElementById("output-initial").classList.add("disable");
     // Muestra la pantalla con el mensaje encriptado/desencriptado
     document.getElementById("output-result").classList.remove("disable");
+    // Muestra una alerta de que el mensaje se encriptó correctamente
+    swal("Excelente!", "Texto encriptado con éxito", "success");
   } else {
     // Si el campo está vacío lanza una alerta para informar
     swal("Atención!", "Ingrese el texto a encriptar!", "error");
@@ -48,6 +50,8 @@ function btnDecrypt() {
     document.getElementById("output-initial").classList.add("disable");
     // Muestra la pantalla con el mensaje encriptado/desencriptado
     document.getElementById("output-result").classList.remove("disable");
+    // Muestra una alerta de que el mensaje se desencriptó correctamente
+    swal("Excelente!", "Texto desencriptado con éxito", "success");
   } else {
     // Si el campo está vacío lanza una alerta para informar
     swal("Atención!", "Ingrese el texto a desencriptar!", "error");
@@ -115,7 +119,7 @@ document.getElementById("copy").onclick = function () {
   let text = document.getElementById("content").value;
   navigator.clipboard.writeText(text);
   // Muestra una alerta de que el mensaje fue copiado con éxito
-  swal("Texto copiado", "Excelente!", "success");
+  swal("Texto copiado con éxito", "Excelente!", "success");
   // Muestra nuevamente la pantalla con el mensaje inicial
   document.getElementById("output-initial").classList.remove("disable");
   // Oculta la pantalla con el mensaje que fue encriptado/desencriptado
