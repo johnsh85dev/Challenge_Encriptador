@@ -1,0 +1,26 @@
+:root {
+  --bg-body: #090909;
+  --bg-body-elements: #1d1d1d;
+  --txt-color: #fafafa;
+  --txt2-color: #ffffff;
+  --txt3-color: #fafafa;
+  --txt4-color: #cacfd2;
+  --btn1-bg: #0a3871;
+  --btn2-bg: #d8dfe8;
+  --btn-txt-color1: #0a3871;
+  --btn-txt-color2: #ffffff;
+  --btn-hover: #dc7633;
+  --shadow: rgba(255, 255, 255, 0.75);
+  --icon: #0a3871;
+  --icon-hover: #3498db;
+}
+
+body {
+  color: #ffffff;
+}
+
+.input-text {
+  border: thin solid var(--bg-body-elements);
+  border-radius: 30px;
+  padding-top: 0.5em;
+}

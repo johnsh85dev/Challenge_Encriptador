@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style-tablet.css" />
     <link rel="stylesheet" href="css/style-smartphone.css" />
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="css/light.css" />
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="css/dark.css" />
+    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
     <title>Challenge Encriptador</title>
   </head>
   <body>
@@ -26,6 +29,14 @@
       <!-- Cabecera de la página -->
       <header class="header-container">
         <img class="logo" src="img/Logo.svg" alt="Logo Alura" />
+        <h1>Challenge Encriptador</h1>
+        <img class="logo-2" src="img/logo_oracle&alura.svg" alt="Logo Oracle&Alura" />
+        <dark-mode-toggle
+          id="dark-mode-toggle-1"
+          appearance="toggle"
+          dark="Dark"
+          light="Light"
+          remember="Remember this"></dark-mode-toggle>
       </header>
       <!-- Cuerpo de la página -->
       <!-- Contenedor principal -->
@@ -73,7 +84,7 @@
       <!-- Pie de la página -->
       <footer class="footer-container">
         <div class="copyright">
-          <h3>&copy; Copyright Alura - Challenge Encriptador 2023</h3>
+          <h3>&copy; Copyright Alura - 2023</h3>
           <div class="contact">
             <h3>Developed by Jonathan Sánchez</h3>
             <a

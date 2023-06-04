@@ -2,31 +2,189 @@
   Challenge Encriptador del Programa ONE -G5 - Alura Latam
   Desarrollado por Jonathan Sánchez Hernández - 2023
 */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .container {
-    width: 100vw;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) and (orientation: portrait) {
+  html {
+    box-sizing: border-box;
   }
 
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    color-scheme: light dark;
+  }
+
+  body {
+    background-color: var(--bg-body);
+    transition: background-color 1s;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  /* Cabecera */
+
+  .header-container {
+    width: 100%;
+    height: 10vh;
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .logo {
+    width: 11vw;
+    height: 10vh;
+    padding-bottom: 1vh;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem var(--txt4-color));
+  }
+
+  h1 {
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    color: var(--txt-color);
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem var(--txt4-color));
+  }
+
+  .logo-2 {
+    width: 12vw;
+    height: 2vh;
+    margin-right: 4em;
+    margin-left: 2em;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem var(--txt4-color));
+  }
+
+  /* Contenedor Principal */
   .main-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  /* Contenedor para ingreso de texto */
+  .container-input {
+    padding: 6%;
+    width: 100%;
+    height: 80vh;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
 
-  .container-input {
-    padding: 5%;
+  .input-text {
     width: 100%;
     height: 70%;
+    background-color: var(--bg-body);
+    border: none;
+    color: var(--txt-color);
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    resize: none;
   }
 
-  .container-output {
-    padding: 5%;
+  ::placeholder {
+    color: var(--txt-color);
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
+
+  .input-text:focus {
+    outline: none;
+  }
+
+  .informacion {
     width: 100%;
-    height: 30%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    color: var(--txt3-color);
+    font-size: 2.5vw;
+    padding-left: 8%;
+  }
+
+  .btn-encriptar {
+    background-color: var(--btn1-bg);
+    border: 1px solid var(--btn2-bg);
+    border-radius: 1.5rem;
+    color: var(--btn-txt-color2);
+    width: 250px;
+    height: 52px;
+    margin: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .btn-encriptar:hover {
+    background-color: var(--btn-hover);
+    transition: 300ms;
+    color: var(--btn-txt-color2);
+    box-shadow: 6px 5px 16px 0px var(--shadow);
+    -webkit-box-shadow: 6px 5px 16px 0px var(--shadow);
+    -moz-box-shadow: 6px 5px 16px 0px var(--shadow);
+  }
+
+  .btn-desencriptar {
+    background-color: var(--btn2-bg);
+    border: 1px solid var(--btn-txt-color1);
+    border-radius: 1.5rem;
+    color: var(--btn-txt-color1);
+    font-size: 1.2rem;
+    width: 250px;
+    height: 52px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+
+  .btn-desencriptar:hover {
+    background-color: var(--btn-hover);
+    border: 1px solid var(--btn-txt-color2);
+    transition: 300ms;
+    color: var(--txt2-color);
+    box-shadow: 6px 5px 16px 0px var(--shadow);
+    -webkit-box-shadow: 6px 5px 16px 0px var(--shadow);
+    -moz-box-shadow: 6px 5px 16px 0px var(--shadow);
+  }
+  /* Contenedor Mensaje Encriptado/Desencriptado */
+  .container-output {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .output-initial {
-    width: 90%;
+    width: 87%;
+    height: 85%;
+    background-color: var(--bg-body-elements);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .muñeco {
@@ -34,90 +192,440 @@
   }
 
   .mensaje-inicial {
-    font-size: 3vw;
-    padding-top: 2rem;
-    padding-bottom: 0.5rem;
+    font-family: "Inter";
+    font-size: 3.5vw;
+    color: var(--txt4-color);
+    text-align: center;
+    font-weight: bold;
+    background: var(--bg-body-elements);
+    padding-top: 8vh;
   }
 
   .insert-text {
+    width: 80%;
     height: 10vh;
-    font-size: 2vh;
-    padding-top: 1rem;
+    font-size: 2.5vw;
+    background-color: var(--bg-body-elements);
+    color: var(--txt3-color);
+    text-align: center;
   }
 
   .output-result {
-    width: 100%;
-    height: 25vh;
-    padding-bottom: 1rem;
-  }
-
-  .output-text {
-    padding-top: 1rem;
-    font-size: 3vw;
-  }
-
-  .copyright {
-    font-size: 1.5vw;
-    justify-content: space-between;
+    width: 87%;
+    height: 85%;
+    background-color: var(--bg-body-elements);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
   }
-}
-
-@media screen and (max-height: 640px) {
-  .main-container {
-    flex-direction: row;
-  }
-
-  .container-input {
-    width: 60%;
-    height: 80vh;
-    padding-top: 6%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
-  }
-
-  ::placeholder {
-    font-size: 1.3rem;
-    padding-left: 0;
-  }
-
-  .informacion {
-    font-size: 1rem;
-  }
-
-  .container-output {
-    padding: 3%;
-    padding-top: 0;
-    width: 40%;
-    height: 90vh;
-  }
-
-  .output-result {
-    width: 100%;
-    height: 80vh;
-    padding-bottom: 1rem;
-  }
 
   .output-text {
-    width: 80%;
-    height: 70%;
-  }
-
-  .btn-copiar {
-    width: 80%;
-    height: 13vh;
-  }
-
-  .btn-encriptar {
-    height: 13vh;
-  }
-
-  .btn-desencriptar {
-    height: 13vh;
+    width: 90%;
+    height: 85%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    font-family: "Inter";
+    color: var(--txt3-color);
+    font-size: 2.5vw;
   }
 
   .copiar {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .btn-copiar {
+    border: 1px solid var(--btn-txt-color2);
+    border-radius: 1.5rem;
+    color: var(--btn-txt-color2);
+    font-size: 1rem;
+    width: 250px;
+    height: 52px;
+    cursor: pointer;
+    background-color: var(--btn1-bg);
+  }
+
+  .btn-copiar:hover {
+    background-color: var(--btn-hover);
+    transition: 300ms;
+    color: var(--txt2-color);
+    box-shadow: 6px 5px 16px 0px var(--shadow);
+    -webkit-box-shadow: 6px 5px 16px 0px var(--shadow);
+    -moz-box-shadow: 6px 5px 16px 0px var(--shadow);
+  }
+
+  .disable {
+    display: none;
+  }
+
+  .buttons {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  /* Pie de Página */
+  .footer-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .copyright {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 2vw;
+    color: var(--txt3-color);
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .contact h3 {
+    padding-top: 1.3rem;
+    color: var(--txt3-color);
+  }
+
+  .icono {
+    font-size: 2rem;
+    color: var(--icon);
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .icono:hover {
+    color: var(--icon-hover);
+    transition: 200ms;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) and (orientation: landscape) {
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+    margin: 0;
     padding: 0;
+  }
+
+  :root {
+    color-scheme: light dark;
+  }
+
+  body {
+    background-color: var(--bg-body);
+    transition: background-color 1s;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  /* Cabecera */
+
+  .header-container {
+    width: 100%;
+    height: 10vh;
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .logo {
+    width: 12vw;
+    height: 10vh;
+    padding-bottom: 2vh;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem var(--txt4-color));
+  }
+
+  h1 {
+    width: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--txt-color);
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem var(--txt4-color));
+  }
+
+  .logo-2 {
+    width: 20vw;
+    height: 8vh;
+    margin-right: 4em;
+    margin-left: 2em;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem var(--txt4-color));
+  }
+
+  /* Contenedor Principal */
+  .main-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  /* Contenedor para ingreso de texto */
+  .container-input {
+    padding: 6%;
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .input-text {
+    width: 100%;
+    height: 70%;
+    background-color: var(--bg-body);
+    border: none;
+    color: var(--txt-color);
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    resize: none;
+  }
+
+  ::placeholder {
+    color: var(--txt-color);
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
+
+  .input-text:focus {
+    outline: none;
+  }
+
+  .informacion {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    color: var(--txt3-color);
+    font-size: 1rem;
+    padding-left: 8%;
+  }
+
+  .btn-encriptar {
+    background-color: var(--btn1-bg);
+    border: 1px solid var(--btn2-bg);
+    border-radius: 1.5rem;
+    color: var(--btn-txt-color2);
+    width: 300px;
+    height: 52px;
+    margin: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .btn-encriptar:hover {
+    background-color: var(--btn-hover);
+    transition: 300ms;
+    color: var(--btn-txt-color2);
+    box-shadow: 6px 5px 16px 0px var(--shadow);
+    -webkit-box-shadow: 6px 5px 16px 0px var(--shadow);
+    -moz-box-shadow: 6px 5px 16px 0px var(--shadow);
+  }
+
+  .btn-desencriptar {
+    background-color: var(--btn2-bg);
+    border: 1px solid var(--btn-txt-color1);
+    border-radius: 1.5rem;
+    color: var(--btn-txt-color1);
+    font-size: 1.2rem;
+    width: 300px;
+    height: 52px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+
+  .btn-desencriptar:hover {
+    background-color: var(--btn-hover);
+    border: 1px solid var(--btn-txt-color2);
+    transition: 300ms;
+    color: var(--txt2-color);
+    box-shadow: 6px 5px 16px 0px var(--shadow);
+    -webkit-box-shadow: 6px 5px 16px 0px var(--shadow);
+    -moz-box-shadow: 6px 5px 16px 0px var(--shadow);
+  }
+  /* Contenedor Mensaje Encriptado/Desencriptado */
+  .container-output {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .output-initial {
+    width: 60%;
+    height: 85%;
+    background-color: var(--bg-body-elements);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .muñeco {
+    width: 60%;
+    background: var(--bg-body-elements);
+  }
+
+  .mensaje-inicial {
+    font-family: "Inter";
+    font-size: 1.6vw;
+    color: var(--txt4-color);
+    text-align: center;
+    font-weight: bold;
+    background: var(--bg-body-elements);
+  }
+
+  .insert-text {
+    width: 80%;
+    height: 20vh;
+    font-size: 1.3vw;
+    background-color: var(--bg-body-elements);
+    color: var(--txt3-color);
+    text-align: center;
+  }
+
+  .output-result {
+    width: 60%;
+    height: 85%;
+    background-color: var(--bg-body-elements);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .output-text {
+    width: 90%;
+    height: 60vh;
+    padding-top: 1em;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    font-family: "Inter";
+    color: var(--txt3-color);
+    font-size: 1.7vw;
+  }
+
+  .copiar {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .btn-copiar {
+    border: 1px solid var(--btn-txt-color2);
+    border-radius: 1.5rem;
+    color: var(--btn-txt-color2);
+    font-size: 1rem;
+    width: 300px;
+    height: 52px;
+    cursor: pointer;
+    background-color: var(--btn1-bg);
+  }
+
+  .btn-copiar:hover {
+    background-color: var(--btn-hover);
+    transition: 300ms;
+    color: var(--txt2-color);
+    box-shadow: 6px 5px 16px 0px var(--shadow);
+    -webkit-box-shadow: 6px 5px 16px 0px var(--shadow);
+    -moz-box-shadow: 6px 5px 16px 0px var(--shadow);
+  }
+
+  .disable {
+    display: none;
+  }
+
+  .buttons {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  /* Pie de Página */
+  .footer-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .copyright {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2vw;
+    color: var(--txt3-color);
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .contact h3 {
+    padding-top: 1.3rem;
+    color: var(--txt3-color);
+  }
+
+  .icono {
+    font-size: 2rem;
+    color: var(--icon);
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .icono:hover {
+    color: var(--icon-hover);
+    transition: 200ms;
   }
 }
