@@ -7,7 +7,7 @@
 
  <br>
  
- >Este desafío consiste en desarrolar un Encriptador/Desencriptador de Texto
+ >Este desafío consiste en desarrollar un Encriptador/Desencriptador de Texto
  >utilizando los conocimientos adquiridos de HTML, CSS y JAVASCRIPT, durante
  >la primer etapa del Programa ONE - "Principiante en Programación"
 
@@ -50,11 +50,14 @@
 <br>
 
 >Tablet
->
+
 >Light-Mode
+>
 >![Tablet-Light-Mode](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/144e6a33-d200-410a-b91b-b941e6748bdc)
 
+
 >Dark-Mode
+>
 >![Tablet-Dark-Mode](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/e94712d1-4e82-46dd-b953-e727066666f5)
 
 <br>
