@@ -1,9 +1,10 @@
  <h1 align="center"> Challenge Encriptador </h1>
  
  # Descripción del proyecto
- 
- [Challenge Encriptador](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/835bdfff-cc24-446f-9283-525996e949e6)
- 
+
+[Challenge Encriptador.webm](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/dc772880-e1b1-4c45-b93f-f272b600fe0f)
+
+
  <br>
  
  >Este desafío consiste en desarrolar un Encriptador/Desencriptador de Texto
@@ -40,19 +41,27 @@
 
 >Desktop
 >
->![Desktop](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/5658fc14-f1c0-4a80-86e7-78fdd2c9135a)
+>Light-Mode
+>![Desktop-Light-Mode](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/8288dbcc-c11d-4736-a214-9e79d6b51703)
+
+>Dark-Mode
+>![Desktop-Dark-Mode](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/62950307-43fe-43e4-b9dd-42edb634e8f8)
 
 <br>
 
 >Tablet
 >
->![Tablet](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/4970364f-914e-4a2f-a1eb-a40dcf9c5fda)
+>Light-Mode
+>![Tablet-Light-Mode](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/144e6a33-d200-410a-b91b-b941e6748bdc)
+
+>Dark-Mode
+>![Tablet-Dark-Mode](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/e94712d1-4e82-46dd-b953-e727066666f5)
 
 <br>
 
 >Smartphone
 >
->![Smartphone](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/613325f8-d976-42c0-ba16-dfae1a08d9b4)
+>[Challenge Encriptador (smartphone).webm](https://github.com/johnsh85dev/Challenge_Encriptador/assets/126521026/164cf7c8-1fa1-4ae9-96f0-f56f5f338e24)
 
 <br>
 
